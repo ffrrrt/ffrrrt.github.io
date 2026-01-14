@@ -1,0 +1,316 @@
+h4{
+    margin-bottom: -10px;
+}
+
+h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    font-family: monospace;
+    font-size: 26px;
+    background-color: #8A94F3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+body{
+    background-color: rgb(111, 121, 206);
+}
+
+.about-me{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 110%;
+    background-color: rgb(239, 239, 242);
+    border: 5px solid #8A94F3;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.project {
+    font-family: monospace;
+    font-size: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding: 0px 20px;
+    border: 5px solid #8A94F3;
+    border-radius: 20px;
+    background-color: rgb(239, 239, 242);
+}
+
+.project > h4,
+.project > p,
+.project > a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    margin-bottom: -30px;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Левая часть с контентом */
+.project-content {
+    flex: 1;
+    padding-right: 20px;
+}
+/* Правая часть со ссылкой */
+.project-link {
+    align-self: center;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* Стили для ссылки */
+.project a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: hsl(229, 90%, 77%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.skills-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font-family: monospace;
+    font-size: 110%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+    gap: 20px; /* Отступ между элементами */
+}
+
+.skill-category {
+    background-color: rgb(239, 239, 242);
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid #8A94F3;
+}
+
+.skill-category h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #4a6bff;
+    padding-bottom: 8px;
+}
+
+.skill-category p {
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.education {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 110%;
+    background-color: rgb(239, 239, 242);
+    border: 5px solid #8A94F3;
+    border-radius: 10px;
+    padding: 20px 30px 20px 50px; /* Увеличил левый padding */
+    position: relative;
+    overflow: visible; /* Важно! */
+}
+
+.education ul {
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+}
+
+/* Звездочки СЛЕВА от контейнера */
+.education > ul > li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    border: 1px solid #e8ecff;
+    border-left: 3px solid #8A94F3;
+    border-top: 3px solid #8A94F3;
+}
+
+/* Звездочки ВНЕ контейнера */
+.education > ul > li::before {
+    content: '★';
+    position: absolute;
+    left: -30px; /* Звездочка за пределами контейнера */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8A94F3;
+    font-weight: bold;
+    background: rgb(239, 239, 242); /* Цвет фона контейнера */
+    display: flex;
+    align-items: center;
+}
+
+/* Курсы - своя звездочка */
+.education > ul > li:last-child::before {
+    content: '★';
+    color: #8A94F3;
+    background: rgb(239, 239, 242);
+}
+
+/* Стили для курсов внутри */
+.education > ul > li:last-child ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.education > ul > li:last-child li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 6px;
+    border-left: 3px solid #8A94F3;
+    border-top: 3px solid #8A94F3;
+}
+
+/* Убираем звездочки у вложенных элементов курсов */
+.education ul ul li::before {
+    display: none;
+}
+
+.education a {
+    display: inline-block;
+    padding: 6px 15px;
+    background: hsl(229, 90%, 77%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    white-space: nowrap;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.soft-skills{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 110%;
+    background-color: rgb(239, 239, 242);
+    border: 5px solid #8A94F3;
+    border-radius: 10px;
+    padding: 20px 30px 20px 50px; /* Увеличил левый padding */
+    position: relative;
+    overflow: visible; /* Важно! */
+}
+
+.soft-skills ul {
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.soft-skills > ul > li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    border: 1px solid #e8ecff;
+    border-left: 3px solid #8A94F3;
+    border-top: 3px solid #8A94F3;
+}
+
+.soft-skills > ul > li::before {
+    content: '★';
+    position: absolute;
+    left: -30px; /* Звездочка за пределами контейнера */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8A94F3;
+    font-weight: bold;
+    background: rgb(239, 239, 242); /* Цвет фона контейнера */
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background: #6569aa;
+    color: white;
+    padding: 20px 0;
+    margin-top: -6px;
+}
+
+.header-content {
+    font-family: monospace;
+    display: flex;
+    justify-content: space-between; /* Разделяем лево/право */
+    align-items: center; /* Выравниваем по центру вертикально */
+    padding: 20px;
+}
+
+/* Левая часть - наименование (ШИРЕ) */
+.item-left {
+    font-family: monospace;
+    background-color: #8A94F3;
+    padding: 15px;
+    border-radius: 15px; /* Закругленные углы */
+    color: white;
+    max-width: 520px; /* ШИРЕ чем было (было 400px) */
+    flex: 1; /* Занимает доступное пространство */
+}
+
+.item-left h2 {
+    margin: 2px;
+    font-size: 22px;
+    line-height: 1;
+    white-space: normal; /* Текст может переноситься */
+}
+
+/* Контейнер для контактов справа */
+.header-contacts {
+    display: flex;
+    gap: 15px; /* Отступы между контактами */
+    white-space: nowrap; /* Весь текст в одну строку */
+}
+
+.header-item {
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.header-item p {
+    margin: 0;
+    white-space: nowrap; /* Каждый контакт в одну строку */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #c0c5ff; /* Светло-синий */
+    text-decoration: underline;
+}

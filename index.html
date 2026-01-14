@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <!-- Левая часть - наименование -->
+            <div class="item-left">
+                <h2>Мария Семенова, junior backend-разработчик</h2>
+            </div>
+            
+            <!-- Правая часть - контакты -->
+            <div class="header-contacts">
+                <div class="header-item">
+                    <p>Телеграм: <a href="https://t.me/mysha554">@mysha554</a></p>
+                </div>
+                <div class="header-item">
+                    <p>Email: Semenova.semyono@yandex.ru</p>
+                </div>
+                <div class="header-item">
+                    <p>GitHub: <a href="https://github.com/SemenovaMar1a">SemenovaMar1a</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h3>О себе</h3>
+    <div class="about-me">
+        
+        <p>
+            Моя цель — стать частью сильной команды, 
+            где я смогу применять свои знания, учиться у опытных коллег и приносить реальную пользу проектам.
+        </p>
+        <p>
+            Свой путь я начинаю с прочного фундамента: образование в колледже дало мне строгое понимание основ программирования на C#, 
+            принципов работы с базами данных (MSSQL) и важности чистого кода. 
+            А самостоятельное погружение в Python и современные веб-фреймворки, 
+            особенно FastAPI, позволило мне почувствовать динамику реальной разработки и реализовать несколько пет-проектов.
+        </p>
+        <p>
+            Я — усидчивый и ответственный человек, люблю докапываться до сути проблемы и находить не просто рабочее, 
+            а хорошее решение. В работе ценю внимание к деталям и ясность.
+        </p>
+        <p>
+            Вне кода заряжаюсь от чтения — и технических статей, и художественной литературы, 
+            а в процессе вязания оттачиваю терпение, которое так нужно в отладке сложного кода.
+        </p>
+    </div>
+
+    <h3>Проекты</h3>
+    <div class="project">
+        <div class="project-item">
+            <div class="project-content">
+                <h4>DogHome</h4>
+                <p>Веб приложение представляющее собой каталог приютов (написано на фреймворке Django с базой данной SQLite).</p>
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/SemenovaMar1a/DogHome">Ссылка</a>
+            </div>
+        </div>
+    
+        <div class="project-item">
+            <div class="project-content">
+                <h4>To-Do</h4>
+                <p>Веб-приложение для заметок с возможностью регистрации и авторизации 
+                    (написан фреймворке на FastAPI с базой данных PostgreSQL).</p>
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/SemenovaMar1a/To-Do">Ссылка</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-content">
+                <h4>Communal meter</h4>
+                <p>Телеграм бот для расчета стоимости комунальных услуг 
+                    (написан ан языке Python с использованием библиотеки aiogram).</p>
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/SemenovaMar1a/communal-meter">Ссылка</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-content">
+                <h4>Password manage</h4>
+                <p>Простой консольный менеджер паролей с подключеной базой данных 
+            (написан на языке Python с подключением базы данных PostgreSQL).</p>
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/SemenovaMar1a/password-manager">Ссылка</a>
+            </div>
+        </div>
+    </div>
+
+    <h3>Hard skills</h3>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h4>Языки</h4>
+            <p>C# - базовый уровень</p>
+            <p>Python - базовый уровень</p>
+            <p>PHP - начальный уровень</p>
+            <p>JavaScript - начальный уровень</p>
+        </div>
+        
+        <div class="skill-category">
+            <h4>Базы данных</h4>
+            <p>PostgreSQL, MSSQL</p>
+        </div>
+        
+        <div class="skill-category">
+            <h4>Фреймворки/Технологии</h4>
+            <p>Django, FastAPI, WPF</p>
+        </div>
+        
+        <div class="skill-category">
+            <h4>Инструменты</h4>
+            <p>Git, Linux</p>
+        </div>
+        
+        <div class="skill-category">
+            <h4>Frontend</h4>
+            <p>HTML, CSS</p>
+        </div>
+    </div>
+
+    <h3>Образование</h3>
+    <div class="education">
+        <ul>
+            <li>Станкостроительный колледж ФГБОУ ВО "Рязанский государственный радиотехнический университет имени В.Ф. Уткина" - 2020г - 2024г</li>
+            <li>Рязанский институт (филиал) Московского политехнического университета - 2025г - 2029г</li>
+            <li>
+                <p>Курсы:</p>
+                <ul>
+                    <li>Добрый, добрый Python с Сергеем Балакиревым. <a href="https://stepik.org/cert/2640669">Сертификат</a></li>
+                    <li>Добрый, добрый Python ООП - обучающий курс от Сергея Балакирева. <a href="https://stepik.org/cert/2596557">Сертификат</a></li>
+                    <li>Интерактивный тренажер по SQL. <a href="https://stepik.org/cert/2476907">Сертификат</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+    <h3>Soft skills</h3>
+    <div class="soft-skills">
+        <ul>
+            <li>Подход к работе: Целеустремленность, ответственность, внимание к деталям.</li>
+            <li>Обучение и адаптация: Готовность учиться, аналитический склад ума, адаптивность.</li>
+            <li>Решение задач: Усидчивость, нацеленность на поиск оптимальных решений.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
